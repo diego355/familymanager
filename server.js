@@ -37,6 +37,7 @@ initializePassport(passport);
 // Routes
 app.use('/', require('./routes/index'));
 app.use('/auth', require('./routes/auth'));
+app.use('/', require('./routes/admin')); // Add admin route
 
 // Server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
